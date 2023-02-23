@@ -1,0 +1,5 @@
+node_modules
+.idea
+.next
+yarn.lock
+yarn-error.log
