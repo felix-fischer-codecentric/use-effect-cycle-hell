@@ -6,7 +6,7 @@ export const useEffectCycleHellHook = () => {
 
     useEffect(() => {
         complexState.startLoading()
-    }, [])
+    }, [complexState])
 
     return {
         state: complexState.state

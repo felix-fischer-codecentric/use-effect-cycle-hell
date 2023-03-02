@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import {HeavyComponent} from "../components/heavy-component";
+import {ComponentWithComplexState as FirstExample} from "../examples/example-01";
+import {ComponentWithComplexState as SecondExample} from "../examples/example-02";
+import {ComponentWithComplexState as ThirdExample} from "../examples/example-03";
 
 export default function Home() {
   return (
@@ -11,7 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-          <HeavyComponent />
+          <>
+              <FirstExample userId="1" />
+              <div style={{ height: 50 }} />
+              <SecondExample />
+              <div style={{ height: 50 }} />
+              <ThirdExample />
+          </>
       </main>
     </>
   )
